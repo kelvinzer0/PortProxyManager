@@ -12,16 +12,21 @@ A simple Windows Forms application to manage `netsh` port proxy rules.
 - **Logging:** All executed commands are logged to `log.txt`.
 - **Admin Privileges:** The application automatically requests to be run as an administrator.
 
+## Requirements
+
+- [.NET 8.0 Runtime](https://dotnet.microsoft.com/download/dotnet/8.0)
+
 ## How to Use
 
-1.  Download the latest release from the [Releases](https://github.com/YOUR_USERNAME/PortProxyManager/releases) page.
-2.  Run the `PortProxyManager.exe` file.
-3.  Fill in the "Listen Port", "Target Port", and "Target IP" fields.
-4.  Use the buttons to manage your port proxy rules.
+1.  Make sure you have the [.NET 8.0 Runtime](https://dotnet.microsoft.com/download/dotnet/8.0) installed.
+2.  Download the latest release from the [Releases](https://github.com/YOUR_USERNAME/PortProxyManager/releases) page.
+3.  Run the `PortProxyManager.exe` file.
+4.  Fill in the "Listen Port", "Target Port", and "Target IP" fields.
+5.  Use the buttons to manage your port proxy rules.
 
 ## Building from Source
 
-To build the project from source, you will need the [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0).
+To build the project from source, you will need the [.NET 8.0 SDK](httpss://dotnet.microsoft.com/download/dotnet/8.0).
 
 1.  Clone the repository:
     ```sh
@@ -33,6 +38,6 @@ To build the project from source, you will need the [.NET 8.0 SDK](https://dotne
     ```
 3.  Publish the application:
     ```sh
-    dotnet publish -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true
+    dotnet publish -c Release -r win-x64 /p:PublishSingleFile=true
     ```
 The executable will be located in `bin/Release/net8.0-windows/win-x64/publish/`.
