@@ -1,0 +1,34 @@
+14/02/2026 09:14:26: Listing all port proxy rules.
+14/02/2026 09:14:26: Executing: netsh interface portproxy show all
+14/02/2026 09:14:26: Output: 
+Listen on ipv4:             Connect to ipv4:
+
+Address         Port        Address         Port
+--------------- ----------  --------------- ----------
+127.0.0.1       445         104.36.20.178   51139
+0.0.0.0         8080        127.0.0.1       8080
+
+
+14/02/2026 09:14:47: Invalid listen port for firewall rule: 
+14/02/2026 09:16:45: Listing all port proxy rules.
+14/02/2026 09:16:45: Executing: netsh interface portproxy show all
+14/02/2026 09:16:45: Output: 
+Listen on ipv4:             Connect to ipv4:
+
+Address         Port        Address         Port
+--------------- ----------  --------------- ----------
+127.0.0.1       445         104.36.20.178   51139
+0.0.0.0         8080        127.0.0.1       8080
+
+
+14/02/2026 09:19:43: Listing all port proxy rules.
+14/02/2026 09:19:43: Executing: netsh interface portproxy show all
+14/02/2026 09:19:43: Output: 
+Listen on ipv4:             Connect to ipv4:
+
+Address         Port        Address         Port
+--------------- ----------  --------------- ----------
+127.0.0.1       445         104.36.20.178   51139
+0.0.0.0         8080        127.0.0.1       8080
+
+
