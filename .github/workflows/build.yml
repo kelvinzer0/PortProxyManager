@@ -33,7 +33,6 @@ jobs:
             /p:PublishTrimmed=false `
             /p:DebugType=None `
             /p:DebugSymbols=false `
-            /p:EnableCompressionInSingleFile=true `
             /p:IncludeNativeLibrariesForSelfExtract=true
 
       - name: Upload Artifact
