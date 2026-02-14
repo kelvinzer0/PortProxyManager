@@ -52,13 +52,18 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           path: artifacts
+
+      - name: Rename artifacts
+        run: |
+          mv artifacts/PortProxyManager-win-x64/PortProxyManager.exe artifacts/PortProxyManager-win-x64.exe
+          mv artifacts/PortProxyManager-win-x86/PortProxyManager.exe artifacts/PortProxyManager-win-x86.exe
           
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            artifacts/PortProxyManager-win-x64/PortProxyManager.exe > PortProxyManager-win-x64.exe
-            artifacts/PortProxyManager-win-x86/PortProxyManager.exe > PortProxyManager-win-x86.exe
+            artifacts/PortProxyManager-win-x64.exe
+            artifacts/PortProxyManager-win-x86.exe
           body: |
             ## Release ${{ github.ref_name }}
             
